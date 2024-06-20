@@ -451,7 +451,7 @@ Rigidbody:
   m_GameObject: {fileID: 559899483}
   serializedVersion: 4
   m_Mass: 0.45
-  m_Drag: 0
+  m_Drag: 0.47
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -1138,7 +1138,7 @@ Transform:
   m_GameObject: {fileID: 1284234433}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1305,15 +1305,6 @@ LineRenderer:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1384,6 +1375,10 @@ PrefabInstance:
     - target: {fileID: 467180273165386505, guid: 6328b8db7e4b8b9d9bd95171842cb689, type: 3}
       propertyPath: simulationLayerMask.m_Bits
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126102240834471025, guid: 6328b8db7e4b8b9d9bd95171842cb689, type: 3}
+      propertyPath: m_Drag
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 3455347239131077203, guid: 6328b8db7e4b8b9d9bd95171842cb689, type: 3}
       propertyPath: m_Enabled

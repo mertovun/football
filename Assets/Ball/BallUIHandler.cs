@@ -39,7 +39,8 @@ public class BallUIHandler : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            mouseDownPosition = hit.point;
+            mouseDownPosition = hit.point + Vector3.up*2f;
+            Debug.Log(hit.point);
             mousePressed = true;
             lineRenderer.positionCount = 0; // Reset the line renderer
         }
@@ -53,7 +54,8 @@ public class BallUIHandler : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            Vector3 mouseUpPosition = hit.point;
+            Vector3 mouseUpPosition = hit.point + Vector3.up*2f;
+            Debug.Log(hit.point);
             dragVector = mouseUpPosition - mouseDownPosition;
 
             // Inform the BallController of the target position and drag vector
@@ -68,7 +70,7 @@ public class BallUIHandler : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            Vector3 currentMousePosition = hit.point;
+            Vector3 currentMousePosition = hit.point + Vector3.up*2f;
             Vector3 ballPosition = ballController.GetPosition();
             dragVector = currentMousePosition - mouseDownPosition;
 
